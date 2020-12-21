@@ -1,14 +1,30 @@
 /* Custom Stylesheet */
 /**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
+ 
+ * Made By  hArinandanShukla ,Webdevloper 
  */
+/* Normal desktop :1200px. */
+/* Normal desktop :992px. */
+/* Tablet desktop :768px. */
+/* small mobile :320px. */
+/* Large Mobile :480px. */
 
+body {
+  
+  font-weight: normal;
+  font-style: normal;
+
+  
+  -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      
+        
+}
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color:#2196f3
 }
 
 p {
@@ -16,9 +32,26 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: #27f7f7;
 }
+.pd2
+{
+  margin-top: 50px;
+  
+}
+.bg1
+{
+  background: rgb(1,7,34);
+  background: linear-gradient(204deg, rgba(1,7,34,1) 0%, rgba(6,0,3,1) 100%); 
+}
+.svg1
+{
+  height: 50vh;
+  
+  width: 750px;
+ 
 
+}
 .parallax-container {
   min-height: 380px;
   line-height: 0;

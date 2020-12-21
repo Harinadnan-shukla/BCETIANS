@@ -1,1 +1,111 @@
-<h1>hi</h1>
+{% load static %}
+<!-- load static is for laoding the static files like img, js and css -->
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+ 
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- SEO Meta Tags -->
+     <meta name="description" content="">
+     <meta name="author" content="Harinandan Shukla,Imanpal singh,rashmi raj,jaskaran">
+         <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+     
+    <!-- title-->
+   <title>{% block title %}{% endblock %}</title>
+   <!-- title finish-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--  Bootstrap CDN,jqyery,popper.js-->
+ 
+   <link rel="stylesheet" href="{% static 'css/other/home.css' %}">
+   <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!--Bootstrap-->
+       
+        <!--JavaScript-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+          integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+          integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>  
+      
+
+        
+<!--maincss start  
+   sample:<link rel="stylesheet" href="{% static '/css/main.css' %}">
+ create main.css in css folder before use 
+    title-->
+    <script src="{% static '/js/materialize.js' %}"></script>
+    <script src="{% static '/js/init.js' %}"></script>
+   
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+
+   <script src="https://use.fontawesome.com/b0e50b68e6.js"></script>
+
+   <!-- Favicon 
+   <link rel="icon" href="{% static 'img/logo.png' %}">
+   put a logo file in img folder which is inside static . so  that it can be appear in tabs.
+
+title-->
+</head>
+
+
+<body>
+    <!--  header and nav section-->
+    {% block header %}
+   
+  <!--navbar-->
+  <nav class="bg1 " role="navigation">
+    <div class="nav-wrapper container"> <a id="logo-container " href="index.html" class="brand-logo "><h4 class="blue-text">BCETIANS</h5></a>
+      <ul class="right hide-on-med-and-down ">
+        <li><a href="about\misson_vision.html">Directory</a></li>
+        <li><a href="about\misson_vision.html">Careers</a></li>
+        <li><a   href="UP_Board_class_12th\Chemistry\UP_Board_12th_Chemistry.html">Contribute</a></li>
+        <li><a href="about\misson_vision.html">Events</a></li>
+        <li><a   href="#"> About us</a></li>
+        <li><a   href="#">Team</a></li>
+        <li><a   href="#"> FAQ</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav grey darken-4  ">
+        <li ><a class="blue-text" href="index.html"><i class="material-icons blue-text">home</i>पाञ्चजन्य विद्यापीठ</a></li>
+        <li><a  class="blue-text " href="about\misson_vision.html"> <i class="material-icons black-text">visibility</i>Misson & Vision</a></li>
+        <li><a class="blue-text" href="UP_Board_class_12th\Chemistry\UP_Board_12th_Chemistry.html"> <i class="material-icons black-text">local_library</i>UP BOARD 12th</a></li>
+        <li><a class="blue-text" href="about\About_us.html"> <i class="material-icons black-text">read_more</i>About us</a></li>
+        <li><a class="blue-text  " href="team\Team.html"><i class="material-icons black-text">group</i>Team</a></li>
+       
+
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger right "><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+   
+      
+    
+
+    {% endblock %}
+    {% block content %}
+    <!--  codes of other page will take place here-->
+    {% endblock %}
+
+    <!-- footer common to all -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   
+</body>
+
+</html>
