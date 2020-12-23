@@ -18,8 +18,11 @@ from django.urls import path, include
 from django.views.generic.base import TemplateView
 from django.conf.urls import url
 from mainapp import views
+from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$',views.index,name='index'),
+    path('accounts/', include('allauth.urls')),
+   
     
 ]
