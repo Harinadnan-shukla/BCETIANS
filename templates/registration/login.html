@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %} BCET GURDASPUR ALUMNI WEBSITE{% endblock %}
+
+{% block content %}
+
+  <div class="section">
+      <div class="container bg1 pd2">
+        {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+      {% endif %}
+    
+      {% if next %}
+        {% if user.is_authenticated %}
+          <p>Your account doesn't have access to this page. To proceed,
+          please login with an account that has access.</p>
+        {% else %}
+          <p>Please login to see this page.</p>
+        {% endif %}
+      {% endif %}
+       <div class=" row">
+           <div class=" col l6 s12">
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <table>
+                  <tr>
+                    <td>{{ form.username.label_tag }}</td>
+                    <td>{{ form.username }}</td>
+                  </tr>
+                  <tr>
+                    <td>{{ form.password.label_tag }}</td>
+                    <td>{{ form.password }}</td>
+                  </tr>
+                </table>
+                <button class="btn waves-effect bg1  pd2 btborder " type="submit" name="action"> <input  class="blue-text" type="submit" value="login" />
+                    <i class="material-icons right">send</i>
+                  </button>
+                
+                <input type="hidden" name="next" value="{{ next }}" />
+              </form>
+            
+              {# Assumes you setup the password_reset view in your URLconf #}
+              <p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+              <p> <a href="{% url 'sign_up' %}">Sign Up</a></p>
+              
+              </div>
+              <div class="col l6 s12">
+
+                <div class=""><img src="/static/svg/login.svg" class="svg1"></div>
+              </div>
+              
+              
+           </div>
+       </div>
+      
+  </div>
+{% endblock %}

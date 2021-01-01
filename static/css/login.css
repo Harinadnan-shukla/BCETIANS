@@ -1,0 +1,10 @@
+.bg1
+{
+  background: rgb(1,7,34);
+  background: linear-gradient(204deg, rgba(1,7,34,1) 0%, rgba(6,0,3,1) 100%); 
+  color: white;
+}
+.footer_height{
+    top: 100vh;
+}
+ 

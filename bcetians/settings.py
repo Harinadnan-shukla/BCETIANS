@@ -149,3 +149,23 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+'''
+EMAIL_BACKEND = 'django_ses.SESBackend'
+AWS_ACCESS_KEY_ID = 'AKIAJT54EIZUECVA3M7A '
+AWS_SECRET_ACCESS_KEY = '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 '
+AWS_SES_REGION_NAME = 'us-east-1' #(ex: us-east-2)
+AWS_SES_REGION_ENDPOINT ='REGION-ENDPOINT' #(ex: email.us-east-2.amazonaws.com) 
+'''
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'nandan980633@gmail.com'
+EMAIL_HOST_PASSWORD = '9455136334'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
+
+LOGIN_REDIRECT_URL = '/'

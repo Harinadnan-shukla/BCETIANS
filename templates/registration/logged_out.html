@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %} BCET GURDASPUR ALUMNI WEBSITE{% endblock %}
+{% block content %}
+ 
+<div class="section ">
+    <div class="container pd2">
+        <div class="row">
+            
+            <div class="col l6 s12 pd2">
+                <p class=" white-text  "> Hi <span class="blue-text"> ALUMNI You are now signed out</span><br>
+               Thanks to You, <br>
+                  <br>
+                 With best Regards<br> BCET ALUMNI TEAM.<br> HAVE A NICE DAY !!!</p>
+                
+                 <button class="btn waves-effect bg1  btborder " type="submit" name="action">
+                    <a href="{% url 'login'%}">Click here to login again.</a>
+                    <i class="material-icons right">send</i>
+                  </button>
+            </div>
+            <div class=" col l6 s12">
+                <div class=""><img src="/static/svg/signout.svg" class="svg1 pd2 "></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

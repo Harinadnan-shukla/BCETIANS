@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} BCET GURDASPUR ALUMNI WEBSITE{% endblock %}
+
+{% block content %}
+
+<div class="section ">
+    <div class="container pd2">
+        <div class="row">
+            <div class=" col l12 s12">
+                <div class=""><img src="/static/svg/confirmation.svg" class="svg1 pd2 "></div>
+            </div>
+            <div class="col l12 s12 pd2">
+                <p class=" white-text  "> Hi <span class="blue-text">{{NAME}}!</span><br>
+               Your Details are succesfully Submitted to us. <br>
+                 After succesfull verification from our database we will send you your login crdentials at your Email: <span class="blue-text">{{Mail}}</span><br>
+                 With best Regards<br> BCET ALUMNI TEAM.<br> HAVE A NICE DAY !!!</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

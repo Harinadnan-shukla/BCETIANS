@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %} BCET GURDASPUR ALUMNI WEBSITE{% endblock %}
+{% block content %}
+<div class="section  pd2">
+     <div class="container ">
+      <button class="btn waves-effect bg1  pd2 right btborder " type="submit" name="action">
+        <a href="{% url 'logout'%}">Log Out.</a>
+        <i class="material-icons right">send</i>
+      </button>
+    <div class="col s12 m8 offset-m2 l6 offset-l3 bg1">
+      <div class="card-panel grey lighten-5 z-depth-1 bg1">
+        <div class="row valign-wrapper">
+          <div class="col s2">
+            <img src="../static/img/testuser.jpg" alt="" class="circle responsive-img">
+            <!-- notice the "circle" class -->
+          </div>
+          <div class="col s10">
+            <span class=" white-text">
+              <h5>Harinandan Shukla<br>
+                Currently Working In TCS <br>
+                2014 Batch Computer Science
+            2+ Years of Work Experience 
+        </h5>
+              </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+
+{% endblock %}

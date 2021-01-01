@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} BCET GURDASPUR ALUMNI WEBSITE{% endblock %}
+
+{% block content %} 
+<div class="container">
+    <div class="section pd2 bg1">
+        <div class=" row">
+            <div class=" col l6 s12">
+                <form method="POST" class="post-form" action="/successfull">  
+                    {% csrf_token %}  
+                    {{ form.as_p }} 
+                    <button class="btn waves-effect bg1 btborder  " type="submit" name="action"> 
+                        Submit
+                        <i class="material-icons right">send</i>
+                      </button> 
+                    
+                </form> 
+            </div>
+            <div class="col l6 s12">
+
+                <div class=""><img src="/static/svg/signup2.svg" class="svg1"></div>
+              </div>
+        </div> 
+    </div>
+
+</div>
+    
+{% endblock %}

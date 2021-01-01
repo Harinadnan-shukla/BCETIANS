@@ -9,6 +9,8 @@
 /* small mobile :320px. */
 /* Large Mobile :480px. */
 
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
 body {
   
   font-weight: normal;
@@ -23,9 +25,10 @@ body {
       
         
 }
+
 nav ul a,
-nav .brand-logo {
-  color:#2196f3
+nav  .brand-logo {
+  color:#2196f3;
 }
 
 p {
@@ -54,9 +57,25 @@ p {
  
 
 }
+.svgevent{
+
+  height: 40vh;
+  
+  width: 750px;
+}
+.bld
+{
+  font-weight: bold;
+}
+
 .fnt1
 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btborder
+{
+  border: 1px solid #2196f3;
+  color:  #2196f3 ;
 }
 .card-action
 {
@@ -113,4 +132,12 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+
+label
+{
+  font-size: 20px;
+  color: white;
+  padding: 10px;
 }

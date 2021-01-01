@@ -25,9 +25,10 @@
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <!--  Bootstrap CDN,jqyery,popper.js-->
  
-   <link rel="stylesheet" href="{% static 'css/other/home.css' %}">
+   <link rel="stylesheet" href="{% static 'css/login.css' %}">
+   
    <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
-   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   
         <!--Bootstrap-->
        
         <!--JavaScript-->
@@ -72,31 +73,10 @@ title-->
    
   <!--navbar-->
   <nav class="bg1 " role="navigation">
-    <div class="nav-wrapper container"> <a id="logo-container " href="{% url 'Homepage' %}" class="brand-logo "><h4 class="blue-text ">BCETIANS</h5></a>
-      <ul class="right hide-on-med-and-down ">
-        <li><a href="#">Directory</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a   href="#">Contribute</a></li>
-        <li><a href="{% url 'BCETIANSEVENTS' %}">Events</a></li>
-        <li><a   href="#"> About us</a></li>
-        <li><a   href="#">Chair-Persons</a></li>
-        <li><a   href="{% url 'FAQ' %}"> FAQ</a></li>
-        <li><a   href="{% url 'logout' %}"> Logout</a></li>
-      </ul>
-     
-
-      <ul id="nav-mobile" class="sidenav grey darken-4  ">
-        <li ><a class="blue-text" href="#"><i class="material-icons blue-text">home</i>BCETIANS</a></li>
-        <li><a  class="blue-text " href="#"> <i class="material-icons black-text">visibility</i>Misson & Vision</a></li>
-        <li><a class="blue-text" href="#"> <i class="material-icons black-text">local_library</i></a></li>
-        <li><a class="blue-text" href="#"> <i class="material-icons black-text">read_more</i>About us</a></li>
-        <li><a class="blue-text  " href="#"><i class="material-icons black-text">group</i>Team</a></li>
-       
-
-      </ul>
+    <div class="nav-wrapper container"> <a id="logo-container " href="index.html" class="brand-logo "><h4 class="blue-text ">BCETIANS</h5></a>
       
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger right "><i class="material-icons">menu</i></a>
     </div>
+     
   </nav>
  
   
@@ -113,7 +93,7 @@ title-->
 
 
     </div>
-    <footer class="page-footer bg1">
+    <footer class="page-footer bg1 footer_height">
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
@@ -160,10 +140,6 @@ var mb = document.querySelectorAll('.materialboxed');
 
       })
 
-      document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
-  });
    </script>
 </body>
 
