@@ -6,7 +6,7 @@ class SignUpForm(models.Model):
     Batch=models.IntegerField()
     Branch=models.CharField(max_length=20)
     Address=models.CharField(max_length=100)
-    Mobile=models.IntegerField()
+    Mobile=models.Charfield(max()
     Email=models.EmailField(max_length=50)
     
     def __str__(self): 
